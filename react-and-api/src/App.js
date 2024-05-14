@@ -21,7 +21,7 @@ function App() {
         params: {
           serviceKey: serviceKey,
           currentPage: 1,
-          perPage: 1,
+          perPage: 4,
         },
       });
       setData(response.data);
@@ -46,8 +46,11 @@ function App() {
 
   return (
     <div className="App">
-      <p>길이 : {data.body.length}</p>
-      {/* <p>이름 : {data.header.perPage}</p> */}
+      <p>body 길이 : {data.body.length}</p>
+      <p>header currentPage : {data.header.currentPage}</p>
+      <p>휴양림명 : {data.body[0].NM}</p>
+      <p>위치 : {data.body[0].LC}</p>
+      <p>면적 : {data.body[0].AR}</p>
     </div>
   );
 }
