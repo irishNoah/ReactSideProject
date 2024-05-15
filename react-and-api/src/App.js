@@ -25,6 +25,9 @@ function App() {
         },
       });
 
+      // 응답 데이터를 콘솔에 출력
+      console.log("API Response:", response.data);
+
       // 응답 데이터가 유효한지 확인합니다
       if (
         response.data &&
@@ -64,11 +67,14 @@ function App() {
 
   return (
     <div className="App">
-      <p>body 길이 : {data.body.length}</p>
-      <p>header currentPage : {data.header.currentPage}</p>
-      <p>휴양림명 : {data.body[0].NM}</p>
-      <p>위치 : {data.body[0].LC}</p>
-      <p>면적 : {data.body[0].AR}</p>
+      {data.body.map((item, index) => (
+        <div key={index}>
+          <p>휴양림명 : {item.NM}</p>
+          <p>위치 : {item.LC}</p>
+          <p>면적 : {item.AR}</p>
+          <hr />
+        </div>
+      ))}
     </div>
   );
 }
