@@ -8,6 +8,7 @@ async function trainFetchApi() {
 
     topCoins.forEach((coin, index) => {
       console.group(`Coin ${index + 1}`);
+      console.log(`hello`);
       console.log(`Coin Name: ${coin.name}`);
       console.log(`Symbol: ${coin.symbol}`);
       console.log(`First Data At: ${coin.first_data_at}`);
