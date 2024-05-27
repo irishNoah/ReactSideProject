@@ -30,27 +30,24 @@ function TrainFetchApi() {
   }
 
   return (
-    <div className="TrainFetchApi">
-      <div>
-        <h1>IrishNoah Coin Information</h1>
+    <div className="app-js-container">
+      <div className={styles.coinsMainText}>
+        <h1>IrishNoah Bit-Coin Information</h1>
       </div>
 
-      {coin.map((data) => (
-        <div className={styles.container}>
-          <div>
-            <p>Coin ID: {data.id}</p>
-            <p>Coin Name: {data.name}</p>
-            <p>Symbol: {data.symbol}</p>
-            <p>First Data At: {data.first_data_at}</p>
+      <div className={styles.coins}>
+        {coin.map((data) => (
+          <div key={data.id}>
+            <div>
+              <p>Coin ID: {data.rank}</p>
+              <p>Coin ID: {data.id}</p>
+              <p>Coin Name: {data.name}</p>
+              <p>Symbol: {data.symbol}</p>
+              <p>First Data At: {data.first_data_at}</p>
+            </div>
           </div>
-        </div>
-      ))}
-
-      {/* <div>
-        <p>Coin Name: {coin.name}</p>
-        <p>Symbol: {coin.symbol}</p>
-        <p>First Data At: {coin.first_data_at}</p>
-      </div> */}
+        ))}
+      </div>
     </div>
   );
 }
