@@ -1,25 +1,45 @@
-async function trainFetchApi() {
-  try {
-    const response = await fetch("https://api.coinpaprika.com/v1/tickers");
-    const coins = await response.json();
+import React, { useState, useEffect } from "react";
 
-    // 성능 향상을 위해 필요한 만큼의 데이터만 가져오기
-    const topCoins = coins.slice(0, 100);
+function TrainFetchApi() {
+  const [coin, setCoin] = useState(null);
+  const [error, setError] = useState(null);
 
-    topCoins.forEach((coin, index) => {
-      console.group(`Coin ${index + 1}`);
-      console.log(`hello`);
-      console.log(`Coin Name: ${coin.name}`);
-      console.log(`Symbol: ${coin.symbol}`);
-      console.log(`First Data At: ${coin.first_data_at}`);
-      console.log(`Max Supply: ${coin.max_supply}`);
-      console.log(`Total Supply: ${coin.total_supply}`);
-      console.groupEnd();
-      console.log("==========================================");
-    });
-  } catch (error) {
-    console.error("Error fetching coin data:", error);
+  useEffect(() => {
+    async function fetchCoinData() {
+      try {
+        const response = await fetch("https://api.coinpaprika.com/v1/tickers");
+        const coins = await response.json();
+        setCoin(coins[0]);
+        console.log(coins[0]);
+      } catch (error) {
+        setError(error);
+        console.error("Error fetching coin data:", error);
+      }
+    }
+
+    fetchCoinData();
+  }, []);
+
+  if (error) {
+    return <div>Error fetching coin data: {error.message}</div>;
   }
+
+  if (!coin) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div className="TrainFetchApi">
+      <div>
+        <h1>Hello Irish</h1>
+      </div>
+      <div>
+        <p>Coin Name: {coin.name}</p>
+        <p>Symbol: {coin.symbol}</p>
+        <p>First Data At: {coin.first_data_at}</p>
+      </div>
+    </div>
+  );
 }
 
-trainFetchApi();
+export default TrainFetchApi;
