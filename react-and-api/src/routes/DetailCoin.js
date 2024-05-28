@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-function Detail() {
+function DetailCoin() {
   const { id } = useParams(); // URL에서 id 파라미터를 추출합니다.
   const [coin, setCoin] = useState(null);
 
@@ -42,4 +42,4 @@ function Detail() {
   );
 }
 
-export default Detail;
+export default DetailCoin;

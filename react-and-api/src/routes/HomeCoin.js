@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./HomeCoin.module.css";
-import DetailCoinInfo from "../components/DetailCoinInfo";
+import HomeCoinInfo from "../components/HomeCoinInfo";
 
 function HomeCoin() {
   const [coin, setCoin] = useState(null);
@@ -40,7 +40,7 @@ function HomeCoin() {
         {coin.map((data) => (
           <div className={styles.eachCoin}>
             <div>
-              <DetailCoinInfo
+              <HomeCoinInfo
                 rank={data.rank}
                 id={data.id}
                 name={data.name}

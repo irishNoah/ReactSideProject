@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function DetailCoinInfo({ rank, id, name, symbol, first_data_at }) {
+function HomeCoinInfo({ rank, id, name, symbol, first_data_at }) {
   return (
     <div>
       <h2>
@@ -17,7 +17,7 @@ function DetailCoinInfo({ rank, id, name, symbol, first_data_at }) {
   );
 }
 
-DetailCoinInfo.propTypes = {
+HomeCoinInfo.propTypes = {
   rank: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -25,4 +25,4 @@ DetailCoinInfo.propTypes = {
   first_data_at: PropTypes.string.isRequired,
 };
 
-export default DetailCoinInfo;
+export default HomeCoinInfo;
