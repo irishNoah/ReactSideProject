@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./HomeCoin.module.css";
+import DetailCoinInfo from "../components/DetailCoinInfo";
 
-function TrainFetchApi() {
+function HomeCoin() {
   const [coin, setCoin] = useState(null);
   const [error, setError] = useState(null);
 
@@ -37,13 +38,15 @@ function TrainFetchApi() {
 
       <div className={styles.coins}>
         {coin.map((data) => (
-          <div key={data.id} className={styles.eachCoin}>
+          <div className={styles.eachCoin}>
             <div>
-              <p>Coin ID: {data.rank}</p>
-              <p>Coin ID: {data.id}</p>
-              <p>Coin Name: {data.name}</p>
-              <p>Symbol: {data.symbol}</p>
-              <p>First Data At: {data.first_data_at}</p>
+              <DetailCoinInfo
+                rank={data.rank}
+                id={data.id}
+                name={data.name}
+                symbol={data.symbol}
+                first_data_at={data.first_data_at}
+              />
             </div>
           </div>
         ))}
@@ -52,4 +55,4 @@ function TrainFetchApi() {
   );
 }
 
-export default TrainFetchApi;
+export default HomeCoin;

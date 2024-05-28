@@ -34,4 +34,5 @@
 
 .eachCoin:hover {
   background-color: green;
+  transform: scale(1.1); /* 5%만큼 크기를 증가시킴 */
 }
