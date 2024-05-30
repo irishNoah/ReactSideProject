@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  top: 100px; /* Header 아래에 위치하도록 설정 */
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 999; /* Header 아래에 표시되도록 z-index 설정 */
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+  text-align: center;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+}
+
+.navbar {
+  width: 1500px; /* 너비를 960px로 고정 */
+  max-width: 100%; /* 최대 너비를 100%로 설정하여 작은 화면에서도 잘 보이도록 함 */
+  margin: 0 auto; /* 상하 마진 0, 좌우 마진 자동 조정으로 중앙 정렬 */
+  background-color: black;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%; /* 작은 화면에서는 너비를 100%로 설정 */
+    padding: 10px 0px; /* 패딩을 줄여서 공간을 절약 */
+  }
+}
+
+.navbarMenu {
+  color: white;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.navbarMenu:hover {
+  color: orange; /* 마우스 오버 시 글자 색상을 파란색으로 변경 */
+}

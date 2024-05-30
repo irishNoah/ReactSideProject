@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  z-index: 1000; /* 다른 요소들 위에 표시되도록 z-index 설정 */
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+  text-align: center;
+}

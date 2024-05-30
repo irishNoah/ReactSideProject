@@ -31,11 +31,7 @@ function HomeCoin() {
   }
 
   return (
-    <div className="HomeCoin-js-container">
-      <div className={styles.coinsMainText}>
-        <h1>IrishNoah Bit-Coin Information</h1>
-      </div>
-
+    <div className={styles.container}>
       <div className={styles.coins}>
         {coin.map((data) => (
           <div className={styles.eachCoin}>

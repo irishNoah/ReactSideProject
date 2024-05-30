@@ -1,8 +1,9 @@
-/* .container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-} */
+.container {
+  width: 1500px; /* 너비를 960px로 고정 */
+  max-width: 100%; /* 최대 너비를 100%로 설정하여 작은 화면에서도 잘 보이도록 함 */
+  margin: 0 auto; /* 상하 마진 0, 좌우 마진 자동 조정으로 중앙 정렬 */
+  padding: 20px; /* 내부 여백 추가 */
+}
 
 .coinsMainText {
   text-align: center; /* 텍스트 중앙 정렬 */
@@ -10,16 +11,19 @@
 
 .coins {
   display: grid;
-  grid-template-columns: repeat(4, minmax(400px, 1fr));
-  grid-gap: 100px;
+  grid-template-columns: repeat(3, 1fr); /* 한 행당 3개의 열 */
+  gap: 100px; /* 그리드 항목 간의 간격 */
+  justify-content: center; /* 중앙 정렬 */
   padding: 150px;
-  width: 50%;
+  width: 100%; /* 부모 컨테이너의 너비에 맞춤 */
   padding-top: 20px;
 }
 
 .coins > div {
+  width: 400px; /* 각 코인 항목의 너비를 고정 */
+  height: 250px; /* 각 코인 항목의 높이를 고정 */
   border: 1px solid #ccc; /* 각 코인 항목에 경계선 추가 */
-  padding: 20px; /* 경계선과 내용 사이에 여백 추가 */
+  padding: 10px; /* 경계선과 내용 사이에 여백 추가 */
   border-radius: 8px; /* 경계선의 모서리를 둥글게 만듦 */
   background-color: #fff; /* 배경색을 흰색으로 설정 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
