@@ -14,3 +14,12 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
   text-align: center;
 }
+
+.headerMenu {
+  color: black;
+  text-decoration: none;
+}
+
+.headerMenu:hover {
+  color: blue; /* 마우스 오버 시 글자 색상을 파란색으로 변경 */
+}

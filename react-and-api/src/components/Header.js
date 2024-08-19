@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <div className="header">
-      <h1>IrishNoah Bit-Coin Information</h1>
+      <Link className="headerMenu" to={"/"}>
+        <h1>CoinMate</h1>
+      </Link>
+      {/* <h1>CoinMate</h1> */}
     </div>
   );
 }
