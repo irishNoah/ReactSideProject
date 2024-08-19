@@ -18,10 +18,14 @@
 
 
 ## 회고
+> 느낀점
+- 강의를 듣고, 진행한 소규모 개인 React 프로젝트로써 단기간에 React를 경험해볼 수 있어서 좋았음
 > 너무 단순한 프로젝트
+- 페이징 기능 / 검색 기능 등이 있었으면 좋았을 것 같음 
 - 추후, 동네 날씨 API를 기반으로 SpringBoot + DB(RDB 또는 NoSQL) + 스케줄러(Cron) 등을 활용한 프로젝트 예정인데, 이때 프론트로 React를 활용 예정
 > UI 설계 X
 - 요즘 Trend인 Figma를 활용해 UI Layout 설계 후, 이것을 토대로 화면 구성해보기
+
 
 ## Posting
 > [(React API 프로젝트) API Data Get + 출력](https://velog.io/@irish/ReactJS-API-Project-Fetch-API-Data)
