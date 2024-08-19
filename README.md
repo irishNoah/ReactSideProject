@@ -1,9 +1,7 @@
 # CoinMate (Coin API를 활용한 React 프로젝트)
-<img src="https://github.com/user-attachments/assets/03b1067d-3e78-497e-b5eb-61f4ffa09db4">
 
-https://github.com/user-attachments/assets/f5c5fce5-3537-459a-a71b-e07d34d3d24f
-https://github.com/user-attachments/assets/219f80e4-42db-40d8-83a9-d99d365c003e
-https://github.com/user-attachments/assets/03b1067d-3e78-497e-b5eb-61f4ffa09db4
+<img width="80%" src="https://github.com/user-attachments/assets/cb9bac7f-6f43-4405-a286-f51522e79f13" />
+
 
 ## 학습 목적
 1. React의 기본 개념과 동작 원리를 이해하기
