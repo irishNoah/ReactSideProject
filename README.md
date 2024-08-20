@@ -5,7 +5,7 @@
 
 ## 학습 목적
 1. React의 기본 개념과 동작 원리를 이해하기
-- React는 컴포넌트 기반의 라이브러리, 가상 DOM을 사용하여 효율적으로 UI를 업데이트합니다.
+- React는 컴포넌트 기반의 라이브러리, 가상 DOM을 사용하여 효율적으로 UI를 업데이트 진행
 - JSX 문법의 이해
 - 컴포넌트의 라이프사이클 이해
 2. 상태 관리 라이브러리 Redux 사용 방법 학습하기
@@ -26,19 +26,11 @@
 
 
 ## Posting
-> [(React API 프로젝트) API Data Get + 출력](https://velog.io/@irish/ReactJS-API-Project-Fetch-API-Data)
-- gdgd
-> [(React API 프로젝트) Trouble Shooting - TypeError: cannot read properties of undefined (reading 'length')](https://velog.io/@irish/ReactJS-API-Project-Trouble-Shooting-TypeError-cannot-read-properties-of-undefined-reading-length)
-- d
-> [(React API 프로젝트) map()을 활용해 API로 인출한 여러 데이터 출력하기](https://velog.io/@irish/ReactJS-API-Project-map-fetchData-and-ShowWeb)
-- d
-> [(React API 프로젝트) HTML + vanilla JS 활용해 CoinTracker API Data 보여주기](https://velog.io/@irish/ReactJS-API-Project-HTML-vanilla-JS-CoinTracker-API-Data)
-- d
-> [(React API 프로젝트) HTML + vanilla JS 활용해 CoinTracker API Data 멋지게 console에 찍어주기](https://velog.io/@irish/ReactJS-API-Project-HTML-vanilla-JS-CoinTracker-API-Data-console)
-- d
-> [(React API 프로젝트) 동적 코인 구성](https://velog.io/@irish/React-API-Project-Dynamic-Coins-Showing)
-- d
-> [(React API 프로젝트) coinTracker 데이터를 React App.js에서 실행하기](https://velog.io/@irish/React-API-Project-coinTracker-data-React-App-js-do)
-- d
-> [(React API 프로젝트) Router & HeaderBar & NavBar](https://velog.io/@irish/React-API-Project-Router-HeaderBar-NavBar)
-- d
+- [(React API 프로젝트) API Data Get + 출력](https://velog.io/@irish/ReactJS-API-Project-Fetch-API-Data)
+- [(React API 프로젝트) Trouble Shooting - TypeError: cannot read properties of undefined (reading 'length')](https://velog.io/@irish/ReactJS-API-Project-Trouble-Shooting-TypeError-cannot-read-properties-of-undefined-reading-length)
+- [(React API 프로젝트) map()을 활용해 API로 인출한 여러 데이터 출력하기](https://velog.io/@irish/ReactJS-API-Project-map-fetchData-and-ShowWeb)
+- [(React API 프로젝트) HTML + vanilla JS 활용해 CoinTracker API Data 보여주기](https://velog.io/@irish/ReactJS-API-Project-HTML-vanilla-JS-CoinTracker-API-Data)
+- [(React API 프로젝트) HTML + vanilla JS 활용해 CoinTracker API Data 멋지게 console에 찍어주기](https://velog.io/@irish/ReactJS-API-Project-HTML-vanilla-JS-CoinTracker-API-Data-console)
+- [(React API 프로젝트) 동적 코인 구성](https://velog.io/@irish/React-API-Project-Dynamic-Coins-Showing)
+- [(React API 프로젝트) coinTracker 데이터를 React App.js에서 실행하기](https://velog.io/@irish/React-API-Project-coinTracker-data-React-App-js-do)
+- [(React API 프로젝트) Router & HeaderBar & NavBar](https://velog.io/@irish/React-API-Project-Router-HeaderBar-NavBar)
